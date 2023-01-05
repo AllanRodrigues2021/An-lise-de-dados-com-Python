@@ -2,14 +2,14 @@ import os
 import pandas as pd 
 import plotly.express as px
 
-lista_arquivo = os.listdir(r"C:\Users\TI - PROMEFARMA\Desktop\python\Vendas")
+lista_arquivo = os.listdir(r"---------")
 print(lista_arquivo)
 
 tabela_total = pd.DataFrame()
 
 for arquivo in lista_arquivo:
     if 'Vendas' in arquivo:
-        tabela =  pd.read_csv(fr"C:\Users\TI - PROMEFARMA\Desktop\python\Vendas\{arquivo}")
+        tabela =  pd.read_csv(fr"-Desktop\python\Vendas\{arquivo}")
         print(arquivo)
         tabela_total = tabela_total.append(tabela)
 print(tabela_total)  
